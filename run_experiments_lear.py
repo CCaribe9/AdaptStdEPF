@@ -1,35 +1,17 @@
-print("Toca pandas")
 import pandas as pd
-print("Numpy")
 import numpy as np
-print("Datetime")
 import datetime as dt
-# from tqdm import tqdm
-print("Pickle")
 import pickle
-print("Copy")
 from copy import copy
-# print("Sys")
-# import sys
 import os
 
-print("adaptive_standardisation")
 from adaptive_standardisation import adaptive_standardisation
 
-print("epftoolbox.models")
 from epftoolbox.models import LEAR
-print("epftoolbox.models._lear ")
 from epftoolbox.models._lear import LEAR_adaptive_normalization as LEAR_as
-print("epftoolbox.evaluation")
 from epftoolbox.evaluation import MAE, sMAPE
 
 import concurrent.futures
-
-# print("warnings")
-# import warnings
-# warnings.filterwarnings(action='ignore')
-
-
 
 def process_combination(combination):
     apply_adaptive_standardisation = combination[0]
